@@ -1,0 +1,36 @@
+/* Simple, readable defaults */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; background: #fafafa; }
+
+/* Page container */
+.container { max-width: 960px; margin: 0 auto; padding: 16px; }
+
+/* Simple card */
+.card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 16px; }
+
+/* Inputs & buttons */
+input, textarea, select, button {
+  font: inherit; padding: 8px 10px; border-radius: 6px; border: 1px solid #ddd;
+}
+input, textarea, select { width: 100%; background: #fff; }
+textarea { resize: vertical; }
+
+button { cursor: pointer; border: 1px solid #ddd; background: #f5f5f5; }
+button:hover { background: #eee; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* Small text + error text */
+.muted { color: #666; font-size: 0.9rem; }
+.error { color: #c62828; }
+.success { color: #1b5e20; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-top: 1px solid #eee; }
+thead th { background: #fafafa; border-bottom: 1px solid #eee; }
+
+/* Navbar */
+.nav { background: #fff; border-bottom: 1px solid #eee; }
+.nav a { text-decoration: none; color: #111; }
+.nav a:hover { text-decoration: underline; }
