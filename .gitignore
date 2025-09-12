@@ -1,20 +1,18 @@
 # Python
 __pycache__/
 *.pyc
-
-# Virtual env
 .venv/
+venv/
 
-# Environment files (keep example only)
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Env files
 backend/.env
-.env
+frontend/.env
 
-# OS/editor junk
+# OS/editor
 .DS_Store
-Thumbs.db
-.vscode/
 .idea/
-
-# Byte-compiled / build
-dist/
-build/
+.vscode/
