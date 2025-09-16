@@ -14,11 +14,13 @@ app = Flask(__name__)
 # --- Apply config FIRST (so CORS can read FRONTEND_ORIGIN) ---
 app.config.from_object(Config)
 
-# --- CORS (dev localhost + optional prod origin) ---
-allowed_origins = ["http://localhost:5173", "http://127.0.0.1:5173"]
-frontend_origin = app.config.get("FRONTEND_ORIGIN")
-if frontend_origin:
-    allowed_origins.append(frontend_origin)
+import os
+
+origins_csv = os.getenv(
+    "ALLOWED_ORIGINS",
+    "http://localhost:5173,http://127.0.0.1:5173"
+)
+allowed_origins = [o.strip() for o in origins_csv.split(",") if o.strip()]
 
 CORS(
     app,
