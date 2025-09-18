@@ -5,3 +5,4 @@ pymongo[srv]==4.8.0     # <— change made here
 python-dotenv==1.0.1
 PyPDF2==3.0.1
 gunicorn==21.2.0
+passlib[bcrypt]==1.7.4
