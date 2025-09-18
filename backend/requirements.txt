@@ -1,8 +1,7 @@
-
 Flask==3.0.3
 Flask-Cors==4.0.1
 Flask-JWT-Extended==4.6.0
-pymongo==4.8.0
+pymongo[srv]==4.8.0     # <— change made here
 python-dotenv==1.0.1
 PyPDF2==3.0.1
 gunicorn==21.2.0
